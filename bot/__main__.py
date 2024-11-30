@@ -17,7 +17,7 @@ from signal import (
 from sys import executable
 from time import time
 
-from bot import (
+from tghbot import (
     LOGGER,
     bot,
     config_dict,
@@ -25,30 +25,30 @@ from bot import (
     sabnzbd_client,
     scheduler,
 )
-from .helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     create_help_buttons,
     new_task,
     set_commands,
     sync_to_async
 )
-from .helper.ext_utils.db_handler import database
-from .helper.ext_utils.files_utils import (
+from tghbot.helper.ext_utils.db_handler import database
+from tghbot.helper.ext_utils.files_utils import (
     clean_all,
     exit_clean_up
 )
-from .helper.ext_utils.jdownloader_booter import jdownloader
-from .helper.ext_utils.telegraph_helper import telegraph
-from .helper.listeners.aria2_listener import start_aria2_listener
-from .helper.task_utils.rclone_utils.serve import rclone_serve_booter
-from .helper.telegram_helper.bot_commands import BotCommands
-from .helper.telegram_helper.filters import CustomFilters
-from .helper.telegram_helper.message_utils import (
+from tghbot.helper.ext_utils.jdownloader_booter import jdownloader
+from tghbot.helper.ext_utils.telegraph_helper import telegraph
+from tghbot.helper.listeners.aria2_listener import start_aria2_listener
+from tghbot.helper.task_utils.rclone_utils.serve import rclone_serve_booter
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     auto_delete_message,
     edit_message,
     send_file,
     send_message
 )
-from .modules import (
+from tghbot.modules import (
     anonymous,
     authorize,
     bot_settings,
