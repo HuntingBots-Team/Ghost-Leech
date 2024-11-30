@@ -1,7 +1,7 @@
 from nekozee.filters import command
 from nekozee.handlers import MessageHandler
 
-from bot import bot
+from tghbot import bot
 from ..helper.ext_utils.bot_utils import (
     new_task,
     sync_to_async
