@@ -12,7 +12,7 @@ from nekozee.handlers import (
     MessageHandler
 )
 
-from bot import (
+from tghbot import (
     LOGGER,
     OWNER_ID,
     aria2,
