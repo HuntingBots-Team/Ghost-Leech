@@ -27,7 +27,7 @@ from nekozee.errors import (
     ListenerStopped
 )
 
-from bot import (
+from tghbot import (
     IS_PREMIUM_USER,
     LOGGER,
     MAX_SPLIT_SIZE,
