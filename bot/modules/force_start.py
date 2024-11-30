@@ -1,7 +1,7 @@
 from nekozee.filters import command
 from nekozee.handlers import MessageHandler
 
-from bot import (
+from tghbot import (
     OWNER_ID,
     bot,
     queued_up,
