@@ -5,7 +5,7 @@ from nekozee.handlers import MessageHandler
 from secrets import token_urlsafe
 from aiofiles.os import remove
 
-from bot import (
+from tghbot import (
     LOGGER,
     task_dict,
     task_dict_lock,
