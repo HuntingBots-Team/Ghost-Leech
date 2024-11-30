@@ -13,7 +13,7 @@ from nekozee.handlers import MessageHandler
 from textwrap import indent
 from traceback import format_exc
 
-from bot import (
+from tghbot import (
     LOGGER,
     bot
 )
