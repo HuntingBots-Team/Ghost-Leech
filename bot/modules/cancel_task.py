@@ -10,7 +10,7 @@ from nekozee.handlers import (
     CallbackQueryHandler
 )
 
-from bot import (
+from tghbot import (
     OWNER_ID,
     bot,
     bot_name,
