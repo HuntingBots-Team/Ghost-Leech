@@ -1,7 +1,7 @@
 from nekozee.filters import regex
 from nekozee.handlers import CallbackQueryHandler
 
-from bot import (
+from tghbot import (
     bot,
     cached_dict
 )
