@@ -53,29 +53,29 @@ from tghbot import (
     task_dict,
     user_data
 )
-from ..helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     SetInterval,
     new_task,
     set_commands,
     sync_to_async
 )
-from ..helper.ext_utils.db_handler import database
-from ..helper.ext_utils.jdownloader_booter import jdownloader
-from ..helper.ext_utils.status_utils import get_readable_file_size
-from ..helper.ext_utils.task_manager import start_from_queued
-from ..helper.task_utils.rclone_utils.serve import rclone_serve_booter
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.button_build import ButtonMaker
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import (
+from tghbot.helper.ext_utils.db_handler import database
+from tghbot.helper.ext_utils.jdownloader_booter import jdownloader
+from tghbot.helper.ext_utils.status_utils import get_readable_file_size
+from tghbot.helper.ext_utils.task_manager import start_from_queued
+from tghbot.helper.task_utils.rclone_utils.serve import rclone_serve_booter
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     delete_message,
     edit_message,
     send_file,
     send_message,
     update_status_message,
 )
-from ..modules.rss import add_job
-from ..modules.torrent_search import initiate_search_tools
+from tghbot.modules.rss import add_job
+from tghbot.modules.torrent_search import initiate_search_tools
 
 start = 0
 state = "view"
