@@ -1,16 +1,16 @@
 from nekozee.filters import command
 from nekozee.handlers import MessageHandler
 
-from bot import bot, LOGGER
-from ..helper.ext_utils.bot_utils import (
+from tghbot import bot, LOGGER
+from tghbot.helper.ext_utils.bot_utils import (
     new_task,
     sync_to_async
 )
-from ..helper.ext_utils.links_utils import is_gdrive_link
-from ..helper.task_utils.gdrive_utils.delete import GoogleDriveDelete
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import (
+from tghbot.helper.ext_utils.links_utils import is_gdrive_link
+from tghbot.helper.task_utils.gdrive_utils.delete import GoogleDriveDelete
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     anno_checker,
     auto_delete_message,
     send_message
