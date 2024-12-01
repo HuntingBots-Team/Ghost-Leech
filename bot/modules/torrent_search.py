@@ -11,22 +11,22 @@ from nekozee.handlers import (
     CallbackQueryHandler
 )
 
-from bot import (
+from tghbot import (
     LOGGER,
     bot,
     config_dict,
     qbittorrent_client
 )
-from ..helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     new_task,
     sync_to_async
 )
-from ..helper.ext_utils.status_utils import get_readable_file_size
-from ..helper.ext_utils.telegraph_helper import telegraph
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.button_build import ButtonMaker
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import (
+from tghbot.helper.ext_utils.status_utils import get_readable_file_size
+from tghbot.helper.ext_utils.telegraph_helper import telegraph
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     anno_checker,
     auto_delete_message,
     delete_links,
