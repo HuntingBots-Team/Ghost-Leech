@@ -6,17 +6,17 @@ from nekozee.handlers import (
     EditedMessageHandler
 )
 
-from bot import (
+from tghbot import (
     LOGGER,
     bot
 )
-from ..helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     cmd_exec,
     new_task
     )
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import (
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     send_message,
     send_file
 )
