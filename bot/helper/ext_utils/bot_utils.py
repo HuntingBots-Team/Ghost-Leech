@@ -15,23 +15,22 @@ from httpx import AsyncClient
 
 from nekozee.types import BotCommand
 
-from bot import (
+from tghbot import (
     user_data,
     config_dict,
     bot_loop,
     extra_buttons
 )
-from .help_messages import (
+from tghbot.helper.ext_utils.help_messages import (
     YT_HELP_DICT,
     MIRROR_HELP_DICT,
     CLONE_HELP_DICT,
 )
-from .telegraph_helper import telegraph
-from ..telegram_helper.button_build import ButtonMaker
-from ..telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.telegraph_helper import telegraph
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
 
 COMMAND_USAGE = {}
-
 max_workers = min(
     10000,
     (
