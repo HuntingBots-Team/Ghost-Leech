@@ -1,31 +1,29 @@
 from asyncio import Event
 
-from bot import (
-    config_dict,
-    queued_dl,
-    queued_up,
-    non_queued_up,
-    non_queued_dl,
-    queue_dict_lock,
-    LOGGER,
+from tghbot import (
+config_dict,
+queued_dl,
+queued_up,
+non_queued_up,
+non_queued_dl,
+queue_dict_lock,
+LOGGER,
 )
-from .bot_utils import (
-    sync_to_async,
-    get_telegraph_list,
+from tghbot.helper.ext_utils.bot_utils import (
+sync_to_async,
+get_telegraph_list,
 )
-from .files_utils import (
-    check_storage_threshold,
-    get_base_name
+from tghbot.helper.ext_utils.files_utils import (
+check_storage_threshold,
+get_base_name
 )
-from .links_utils import is_gdrive_id
-from .status_utils import (
-    get_specific_tasks,
-    get_readable_file_size
+from tghbot.helper.ext_utils.links_utils import is_gdrive_id
+from tghbot.helper.ext_utils.status_utils import (
+get_specific_tasks,
+get_readable_file_size
 )
-from ..task_utils.gdrive_utils.search import GoogleDriveSearch
-from ..telegram_helper.message_utils import is_admin
-
-
+from tghbot.helper.task_utils.gdrive_utils.search import GoogleDriveSearch
+from tghbot.helper.telegram_helper.message_utils import is_admin
 async def stop_duplicate_check(listener):
     if (
         isinstance(
