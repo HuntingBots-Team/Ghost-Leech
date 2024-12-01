@@ -24,20 +24,20 @@ from tghbot import (
     task_dict_lock,
     user_data
 )
-from ..helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     bt_selection_buttons,
     new_task,
     sync_to_async
 )
-from ..helper.ext_utils.status_utils import (
+from tghbot.helper.ext_utils.status_utils import (
     get_readable_file_size,
     get_task_by_gid,
     MirrorStatus
 )
-from ..helper.ext_utils.task_manager import limit_checker
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import (
+from tghbot.helper.ext_utils.task_manager import limit_checker
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     auto_delete_message,
     delete_links,
     delete_message,
