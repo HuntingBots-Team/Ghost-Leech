@@ -13,56 +13,56 @@ from html import escape
 from requests import utils as rutils
 from time import time
 
-from bot import (
-    DOWNLOAD_DIR,
-    LOGGER,
-    aria2,
-    config_dict,
-    intervals,
-    non_queued_dl,
-    non_queued_up,
-    queued_dl,
-    queued_up,
-    queue_dict_lock,
-    same_directory_lock,
-    task_dict,
-    task_dict_lock
+from tghbot import (
+DOWNLOAD_DIR,
+LOGGER,
+aria2,
+config_dict,
+intervals,
+non_queued_dl,
+non_queued_up,
+queued_dl,
+queued_up,
+queue_dict_lock,
+same_directory_lock,
+task_dict,
+task_dict_lock
 )
-from ..common import TaskConfig
-from ..ext_utils.bot_utils import (
-    extra_btns,
-    sync_to_async
+from tghbot.helper.common import TaskConfig
+from tghbot.helper.ext_utils.bot_utils import (
+extra_btns,
+sync_to_async
 )
-from ..ext_utils.db_handler import database
-from ..ext_utils.files_utils import (
-    clean_download,
-    clean_target,
-    get_path_size,
-    join_files
+from tghbot.helper.ext_utils.db_handler import database
+from tghbot.helper.ext_utils.files_utils import (
+clean_download,
+clean_target,
+get_path_size,
+join_files
 )
-from ..ext_utils.links_utils import is_gdrive_id
-from ..ext_utils.status_utils import (
-    get_readable_file_size,
-    get_readable_time
+from tghbot.helper.ext_utils.links_utils import is_gdrive_id
+from tghbot.helper.ext_utils.status_utils import (
+get_readable_file_size,
+get_readable_time
 )
-from ..ext_utils.task_manager import (
-    check_running_tasks,
-    start_from_queued
+from tghbot.helper.ext_utils.task_manager import (
+check_running_tasks,
+start_from_queued
 )
-from ..task_utils.gdrive_utils.upload import GoogleDriveUpload
-from ..task_utils.rclone_utils.transfer import RcloneTransferHelper
-from ..task_utils.status_utils.gdrive_status import GoogleDriveStatus
-from ..task_utils.status_utils.queue_status import QueueStatus
-from ..task_utils.status_utils.rclone_status import RcloneStatus
-from ..task_utils.status_utils.telegram_status import TelegramStatus
-from ..task_utils.telegram_uploader import TelegramUploader
-from ..telegram_helper.button_build import ButtonMaker
-from ..telegram_helper.message_utils import (
-    auto_delete_message,
-    delete_links,
-    delete_status,
-    send_message,
-    update_status_message,
+from tghbot.helper.task_utils.gdrive_utils.upload import GoogleDriveUpload
+from tghbot.helper.task_utils.rclone_utils.transfer import RcloneTransferHelper
+from tghbot.helper.task_utils.status_utils.gdrive_status import GoogleDriveStatus
+from tghbot.helper.task_utils.status_utils.queue_status import QueueStatus
+from tghbot.helper.task_utils.status_utils.rclone_status import RcloneStatus
+from tghbot.helper.task_utils.status_utils.telegram_status import TelegramStatus
+from tghbot.helper.task_utils.telegram_uploader import TelegramUploader
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.message_utils import (
+auto_delete_message,
+delete_links,
+delete_status,
+send_message,
+update_status_message,
 )
 
 
