@@ -19,16 +19,16 @@ from tghbot import (
     task_dict_lock,
     user_data
 )
-from ..helper.ext_utils.bot_utils import new_task
-from ..helper.ext_utils.status_utils import (
+from tghbot.helper.ext_utils.bot_utils import new_task
+from tghbot.helper.ext_utils.status_utils import (
     get_task_by_gid,
     get_all_tasks,
     MirrorStatus
 )
-from ..helper.telegram_helper import button_build
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import (
+from tghbot.helper.telegram_helper import button_build
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     anno_checker,
     delete_links,
     send_message,
