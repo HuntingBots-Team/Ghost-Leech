@@ -5,34 +5,34 @@ from aiofiles.os import (
 from asyncio import sleep
 from time import time
 
-from bot import (
-    LOGGER,
-    aria2,
-    config_dict,
-    intervals,
-    task_dict_lock,
-    task_dict,
+from tghbot import (
+LOGGER,
+aria2,
+config_dict,
+intervals,
+task_dict_lock,
+task_dict,
 )
-from ..ext_utils.bot_utils import (
-    bt_selection_buttons,
-    loop_thread,
-    sync_to_async,
+from tghbot.helper.ext_utils.bot_utils import (
+bt_selection_buttons,
+loop_thread,
+sync_to_async,
 )
-from ..ext_utils.files_utils import clean_unwanted
-from ..ext_utils.status_utils import (
-    get_readable_file_size,
-    get_task_by_gid
+from tghbot.helper.ext_utils.files_utils import clean_unwanted
+from tghbot.helper.ext_utils.status_utils import (
+get_readable_file_size,
+get_task_by_gid
 )
-from ..ext_utils.task_manager import (
-    limit_checker,
-    stop_duplicate_check,
-    check_avg_speed
+from tghbot.helper.ext_utils.task_manager import (
+limit_checker,
+stop_duplicate_check,
+check_avg_speed
 )
-from ..task_utils.status_utils.aria2_status import Aria2Status
-from ..telegram_helper.message_utils import (
-    delete_message,
-    send_message,
-    update_status_message,
+from tghbot.helper.task_utils.status_utils.aria2_status import Aria2Status
+from tghbot.helper.telegram_helper.message_utils import (
+delete_message,
+send_message,
+update_status_message,
 )
 
 
