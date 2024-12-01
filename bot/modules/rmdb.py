@@ -1,19 +1,19 @@
 from nekozee.filters import command
 from nekozee.handlers import MessageHandler
 
-from bot import (
+from tghbot import (
     bot,
     config_dict
 )
-from ..helper.ext_utils.links_utils import (
+from tghbot.helper.ext_utils.links_utils import (
     is_magnet,
     is_url
 )
-from ..helper.ext_utils.db_handler import database
-from ..helper.z_utils import extract_link
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import send_message
+from tghbot.helper.ext_utils.db_handler import database
+from tghbot.helper.z_utils import extract_link
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import send_message
 
 
 async def remove_all_tokens(_, message):
