@@ -1,4 +1,4 @@
-from bot import (
+from tghbot import (
     DOWNLOAD_DIR,
     LOGGER,
     bot,
@@ -6,22 +6,22 @@ from bot import (
     config_dict,
     task_dict_lock
 )
-from bot.helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     COMMAND_USAGE,
     arg_parser,
     sync_to_async
 )
-from bot.helper.ext_utils.links_utils import is_url
-from bot.helper.listeners.ytdlp_listener import (
+from tghbot.helper.ext_utils.links_utils import is_url
+from tghbot.helper.listeners.ytdlp_listener import (
     extract_info,
     mdisk,
     YtSelection
 )
-from bot.helper.listeners.task_listener import TaskListener
-from bot.helper.task_utils.download_utils.yt_dlp_download import YoutubeDLHelper
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.message_utils import (
+from tghbot.helper.listeners.task_listener import TaskListener
+from tghbot.helper.task_utils.download_utils.yt_dlp_download import YoutubeDLHelper
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     auto_delete_message,
     delete_message,
     send_message,
