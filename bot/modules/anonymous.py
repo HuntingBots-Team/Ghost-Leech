@@ -5,7 +5,7 @@ from tghbot import (
     bot,
     cached_dict
 )
-from ..helper.telegram_helper.message_utils import (
+from tghbot.helper.telegram_helper.message_utils import (
     delete_message,
     edit_message,
     is_admin
