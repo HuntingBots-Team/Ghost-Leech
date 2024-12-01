@@ -1,26 +1,25 @@
 from asyncio import (
-    sleep,
-    gather
+sleep,
+gather
 )
 
-from bot import (
-    LOGGER,
-    intervals,
-    nzb_jobs,
-    nzb_listener_lock,
-    sabnzbd_client,
-    task_dict_lock,
+from tghbot import (
+LOGGER,
+intervals,
+nzb_jobs,
+nzb_listener_lock,
+sabnzbd_client,
+task_dict_lock,
 )
-from ..ext_utils.bot_utils import new_task
-from ..ext_utils.status_utils import (
-    get_task_by_gid,
-    speed_string_to_bytes
+from tghbot.helper.ext_utils.bot_utils import new_task
+from tghbot.helper.ext_utils.status_utils import (
+get_task_by_gid,
+speed_string_to_bytes
 )
-from ..ext_utils.task_manager import (
-    limit_checker,
-    stop_duplicate_check
+from tghbot.helper.ext_utils.task_manager import (
+limit_checker,
+stop_duplicate_check
 )
-
 
 async def _remove_job(nzo_id, mid):
     (
