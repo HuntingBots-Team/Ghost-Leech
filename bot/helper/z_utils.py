@@ -21,20 +21,20 @@ from bencoding import (
     bencode
 )
 
-from bot import (
+from tghbot import (
     KEY,
     LOGGER,
     config_dict
 )
-from .ext_utils.links_utils import (
+from tghbot.ext_utils.links_utils import (
     is_magnet,
     is_gdrive_link
 )
-from .ext_utils.task_manager import check_user_tasks
-from .ext_utils.token_manager import checking_access
-from .ext_utils.db_handler import database
-from .task_utils.gdrive_utils.helper import GoogleDriveHelper
-from .telegram_helper.message_utils import (
+from tghbot.ext_utils.task_manager import check_user_tasks
+from tghbot.ext_utils.token_manager import checking_access
+from tghbot.ext_utils.db_handler import database
+from tghbot.task_utils.gdrive_utils.helper import GoogleDriveHelper
+from tghbot.telegram_helper.message_utils import (
     auto_delete_message,
     delete_links,
     force_subscribe,
