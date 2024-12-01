@@ -5,21 +5,21 @@ from re import match as re_match
 from nekozee.filters import command
 from nekozee.handlers import MessageHandler
 
-from bot import (
+from tghbot import (
     DOWNLOAD_DIR,
     LOGGER,
     bot,
     bot_loop,
     task_dict_lock
 )
-from ..helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     COMMAND_USAGE,
     get_content_type,
     sync_to_async,
     arg_parser
 )
-from ..helper.ext_utils.exceptions import DirectDownloadLinkException
-from ..helper.ext_utils.links_utils import (
+from tghbpt.helper.ext_utils.exceptions import DirectDownloadLinkException
+from tghbot.helper.ext_utils.links_utils import (
     is_url,
     is_magnet,
     is_gdrive_id,
@@ -28,20 +28,20 @@ from ..helper.ext_utils.links_utils import (
     is_rclone_path,
     is_telegram_link,
 )
-from ..helper.listeners.task_listener import TaskListener
-from ..helper.task_utils.download_utils.aria2_download import add_aria2c_download
-from ..helper.task_utils.download_utils.direct_downloader import add_direct_download
-from ..helper.task_utils.download_utils.direct_link_generator import direct_link_generator
-from ..helper.task_utils.download_utils.gd_download import add_gd_download
+from tghbot.helper.listeners.task_listener import TaskListener
+from tghbot.helper.task_utils.download_utils.aria2_download import add_aria2c_download
+from tghbot.helper.task_utils.download_utils.direct_downloader import add_direct_download
+from tghbot.helper.task_utils.download_utils.direct_link_generator import direct_link_generator
+from tghbot.helper.task_utils.download_utils.gd_download import add_gd_download
 from ..helper.task_utils.download_utils.jd_download import add_jd_download
-from ..helper.task_utils.download_utils.mega_download import add_mega_download
-from ..helper.task_utils.download_utils.qbit_download import add_qb_torrent
-from ..helper.task_utils.download_utils.nzb_downloader import add_nzb
-from ..helper.task_utils.download_utils.rclone_download import add_rclone_download
-from ..helper.task_utils.download_utils.telegram_download import TelegramDownloadHelper
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import (
+from tghbot.helper.task_utils.download_utils.mega_download import add_mega_download
+from tghbot.helper.task_utils.download_utils.qbit_download import add_qb_torrent
+from tghbot.helper.task_utils.download_utils.nzb_downloader import add_nzb
+from tghbot.helper.task_utils.download_utils.rclone_download import add_rclone_download
+from tghbot.helper.task_utils.download_utils.telegram_download import TelegramDownloadHelper
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     auto_delete_message,
     delete_message,
     get_tg_link_message,
