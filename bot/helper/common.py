@@ -24,7 +24,7 @@ from re import (
     I
 )
 
-from bot import (
+from tghgbot import (
     DOWNLOAD_DIR,
     LOGGER,
     IS_PREMIUM_USER,
@@ -41,14 +41,14 @@ from bot import (
     user_data,
     user
 )
-from .ext_utils.bot_utils import (
+from tghgbot.ext_utils.bot_utils import (
     get_size_bytes,
     new_task,
     sync_to_async
 )
-from .ext_utils.bulk_links import extract_bulk_links
-from .ext_utils.exceptions import NotSupportedExtractionArchive
-from .ext_utils.files_utils import (
+from tghbot.ext_utils.bulk_links import extract_bulk_links
+from tghbot.ext_utils.exceptions import NotSupportedExtractionArchive
+from tghbot.ext_utils.files_utils import (
     clean_target,
     get_base_name,
     get_path_size,
@@ -56,37 +56,37 @@ from .ext_utils.files_utils import (
     is_archive,
     is_archive_split
 )
-from .ext_utils.links_utils import (
+from tghbot.ext_utils.links_utils import (
     is_gdrive_id,
     is_rclone_path,
     is_gdrive_link,
     is_telegram_link
 )
-from .ext_utils.media_utils import (
+from tghbot.ext_utils.media_utils import (
     add_attachment,
     create_thumb,
     create_sample_video,
     edit_video_metadata,
     take_ss
 )
-from .ext_utils.media_utils import (
+from tghbot.ext_utils.media_utils import (
     convert_video,
     convert_audio,
     split_file,
     get_document_type
 )
-from .task_utils.gdrive_utils.list import GoogleDriveList
-from .task_utils.rclone_utils.list import RcloneList
-from .task_utils.status_utils.extract_status import ExtractStatus
-from .task_utils.status_utils.sample_video_status import (
+from tghbbot.task_utils.gdrive_utils.list import GoogleDriveList
+from tghbot.task_utils.rclone_utils.list import RcloneList
+from tghbot.task_utils.status_utils.extract_status import ExtractStatus
+from tghbot.task_utils.status_utils.sample_video_status import (
     SampleVideoStatus,
 )
-from .task_utils.status_utils.media_convert_status import (
+from tghbot.task_utils.status_utils.media_convert_status import (
     MediaConvertStatus,
 )
-from .task_utils.status_utils.meta_status import MetaStatus
-from .task_utils.status_utils.split_status import SplitStatus
-from .task_utils.status_utils.zip_status import ZipStatus
+from tghbot.task_utils.status_utils.meta_status import MetaStatus
+from tghbot.task_utils.status_utils.split_status import SplitStatus
+from tghbot.task_utils.status_utils.zip_status import ZipStatus
 from .telegram_helper.bot_commands import BotCommands
 from .telegram_helper.message_utils import (
     anno_checker,
