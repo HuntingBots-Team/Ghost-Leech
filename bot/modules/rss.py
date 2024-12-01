@@ -25,24 +25,24 @@ from nekozee.errors import (
     ListenerStopped
 )
 
-from bot import (
+from tghbot import (
     LOGGER,
     bot,
     config_dict,
     rss_dict,
     scheduler
 )
-from ..helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     arg_parser,
     new_task
 )
-from ..helper.ext_utils.db_handler import database
-from ..helper.ext_utils.exceptions import RssShutdownException
-from ..helper.ext_utils.help_messages import RSS_HELP_MESSAGE
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.button_build import ButtonMaker
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import (
+from tghbot.helper.ext_utils.db_handler import database
+from tghbot.helper.ext_utils.exceptions import RssShutdownException
+from tghbot.helper.ext_utils.help_messages import RSS_HELP_MESSAGE
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     send_message,
     edit_message,
     send_rss,
