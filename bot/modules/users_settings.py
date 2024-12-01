@@ -24,7 +24,7 @@ from nekozee.errors import (
     ListenerStopped
 )
 
-from bot import (
+from tghbot import (
     IS_PREMIUM_USER,
     JAVA,
     MAX_SPLIT_SIZE,
@@ -33,17 +33,17 @@ from bot import (
     global_extension_filter,
     user_data
 )
-from ..helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     new_task,
     update_user_ldata
 )
-from ..helper.ext_utils.db_handler import database
-from ..helper.ext_utils.media_utils import create_thumb
-from ..helper.ext_utils.status_utils import get_readable_file_size
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.button_build import ButtonMaker
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import (
+from tghbot.helper.ext_utils.db_handler import database
+from tghbot.helper.ext_utils.media_utils import create_thumb
+from tghbot.helper.ext_utils.status_utils import get_readable_file_size
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     anno_checker,
     auto_delete_message,
     delete_message,
@@ -51,7 +51,7 @@ from ..helper.telegram_helper.message_utils import (
     send_file,
     send_message,
 )
-from ..helper.z_utils import def_media
+from tghbot.helper.z_utils import def_media
 
 
 async def get_user_settings(from_user):
