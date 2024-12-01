@@ -1,18 +1,18 @@
 from nekozee.filters import regex
 from nekozee.handlers import CallbackQueryHandler
 
-from bot import bot
-from ..helper.ext_utils.bot_utils import (
+from tghbot import bot
+from tghbot.helper.ext_utils.bot_utils import (
     COMMAND_USAGE,
     new_task
 )
-from ..helper.ext_utils.help_messages import (
+from tghbot.helper.ext_utils.help_messages import (
     YT_HELP_DICT,
     MIRROR_HELP_DICT,
     CLONE_HELP_DICT,
 )
-from ..helper.telegram_helper.button_build import ButtonMaker
-from ..helper.telegram_helper.message_utils import (
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.message_utils import (
     edit_message,
     delete_message,
     delete_links
