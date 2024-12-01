@@ -5,18 +5,18 @@ from asyncio import (
 from functools import partial
 from time import time
 
-from ..ext_utils.bot_utils import new_task
-from ..ext_utils.status_utils import (
-    get_readable_file_size,
-    get_readable_time
+from tghbot.helper.ext_utils.bot_utils import new_task
+from tghbot.helper.ext_utils.status_utils import (
+get_readable_file_size,
+get_readable_time
 )
-from ..telegram_helper.button_build import ButtonMaker
-from ..telegram_helper.message_utils import (
-    auto_delete_message,
-    delete_links,
-    delete_message,
-    edit_message,
-    send_message
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.message_utils import (
+auto_delete_message,
+delete_links,
+delete_message,
+edit_message,
+send_message
 )
 
 from nekozee.handlers import CallbackQueryHandler
