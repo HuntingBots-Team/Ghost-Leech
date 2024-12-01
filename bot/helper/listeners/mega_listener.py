@@ -1,19 +1,19 @@
 from threading import Event
 
 from mega import (
-    MegaApi,
-    MegaError,
-    MegaListener,
-    MegaRequest,
-    MegaTransfer
+from mega import (
+MegaApi,
+MegaError,
+MegaListener,
+MegaRequest,
+MegaTransfer
 )
 
-from bot import LOGGER
-from ..ext_utils.bot_utils import (
-    async_to_sync,
-    sync_to_async
+from tghbot import LOGGER
+from tghbot.helper.ext_utils.bot_utils import (
+async_to_sync,
+sync_to_async
 )
-
 
 class AsyncExecutor:
     def __init__(self):
