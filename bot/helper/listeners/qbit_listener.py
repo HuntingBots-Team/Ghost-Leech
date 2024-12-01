@@ -5,34 +5,33 @@ from aiofiles.os import (
 from asyncio import sleep
 from time import time
 
-from bot import (
-    LOGGER,
-    config_dict,
-    intervals,
-    qb_listener_lock,
-    qbittorrent_client,
-    qb_torrents,
-    task_dict,
-    task_dict_lock
+from tghbot import (
+LOGGER,
+config_dict,
+intervals,
+qb_listener_lock,
+qbittorrent_client,
+qb_torrents,
+task_dict,
+task_dict_lock
 )
-from ..ext_utils.bot_utils import (
-    new_task,
-    sync_to_async
+from tghbot.helper.ext_utils.bot_utils import (
+new_task,
+sync_to_async
 )
-from ..ext_utils.files_utils import clean_unwanted
-from ..ext_utils.status_utils import (
-    get_readable_file_size,
-    get_readable_time,
-    get_task_by_gid
+from tghbot.helper.ext_utils.files_utils import clean_unwanted
+from tghbot.helper.ext_utils.status_utils import (
+get_readable_file_size,
+get_readable_time,
+get_task_by_gid
 )
-from ..ext_utils.task_manager import (
-    check_avg_speed,
-    limit_checker,
-    stop_duplicate_check
+from tghbot.helper.ext_utils.task_manager import (
+check_avg_speed,
+limit_checker,
+stop_duplicate_check
 )
-from ..task_utils.status_utils.qbit_status import QbittorrentStatus
-from ..telegram_helper.message_utils import update_status_message
-
+from tghbot.helper.task_utils.status_utils.qbit_status import QbittorrentStatus
+from tghbot.helper.telegram_helper.message_utils import update_status_message
 
 async def _remove_torrent(hash_, tag):
     await sync_to_async(
