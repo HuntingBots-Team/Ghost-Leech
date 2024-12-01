@@ -9,15 +9,15 @@ from json import dump
 from random import randint
 from re import match
 
-from bot import (
-    bot_name,
-    config_dict
+from tghbot import (
+bot_name,
+config_dict
 )
-from .bot_utils import (
-    cmd_exec,
-    new_task
+from tghbot.helper.ext_utils.bot_utils import (
+cmd_exec,
+new_task
 )
-from myjd import MyJdApi
+from tghbot.plugins.myjd import MyJdApi
 
 
 class JDownloader(MyJdApi):
