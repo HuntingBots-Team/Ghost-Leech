@@ -2,16 +2,16 @@ from nekozee.filters import command
 from nekozee.handlers import MessageHandler
 
 from tghbot import bot
-from ..helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     new_task,
     sync_to_async
 )
-from ..helper.ext_utils.links_utils import is_gdrive_link
-from ..helper.ext_utils.status_utils import get_readable_file_size
-from ..helper.task_utils.gdrive_utils.count import GoogleDriveCount
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import (
+from tghbot.helper.ext_utils.links_utils import is_gdrive_link
+from tghbot.helper.ext_utils.status_utils import get_readable_file_size
+from tghbot.helper.task_utils.gdrive_utils.count import GoogleDriveCount
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     anno_checker,
     auto_delete_message,
     delete_message,
