@@ -11,7 +11,7 @@ from cloudscraper import create_scraper
 from urllib.parse import quote
 from urllib3 import disable_warnings
 
-from bot import (
+from tghbot import (
     LOGGER,
     shorteneres_list
 )
