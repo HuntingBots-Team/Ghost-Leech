@@ -1,14 +1,13 @@
 from asyncio import sleep
 
-from bot import (
-    jd_lock,
-    jd_downloads,
-    intervals
+from tghbot import (
+jd_lock,
+jd_downloads,
+intervals
 )
-from ..ext_utils.bot_utils import new_task
-from ..ext_utils.jdownloader_booter import jdownloader
-from ..ext_utils.status_utils import get_task_by_gid
-
+from tghbot.helper.ext_utils.bot_utils import new_task
+from tghbot.helper.ext_utils.jdownloader_booter import jdownloader
+from tghbot.helper.ext_utils.status_utils import get_task_by_gid
 
 @new_task
 async def remove_download(gid):
