@@ -17,13 +17,13 @@ from tghbot import (
     LOGGER,
     bot
 )
-from ..helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     new_task,
     sync_to_async
 )
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import (
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     send_file,
     send_message
 )
