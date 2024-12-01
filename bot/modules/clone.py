@@ -12,35 +12,35 @@ from tghbot import (
     bot,
     bot_loop
 )
-from ..helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     sync_to_async,
     cmd_exec,
     arg_parser,
     COMMAND_USAGE
 )
-from ..helper.ext_utils.exceptions import DirectDownloadLinkException
-from ..helper.ext_utils.links_utils import (
+from tghbot.helper.ext_utils.exceptions import DirectDownloadLinkException
+from tghbot.helper.ext_utils.links_utils import (
     is_gdrive_link,
     is_share_link,
     is_rclone_path,
     is_gdrive_id
 )
-from ..helper.ext_utils.task_manager import (
+from tghbot.helper.ext_utils.task_manager import (
     limit_checker,
     stop_duplicate_check
 )
-from ..helper.listeners.task_listener import TaskListener
-from ..helper.task_utils.download_utils.direct_link_generator import (
+from tghbot.helper.listeners.task_listener import TaskListener
+from tghbot.helper.task_utils.download_utils.direct_link_generator import (
     direct_link_generator
 )
-from ..helper.task_utils.gdrive_utils.clone import GoogleDriveClone
-from ..helper.task_utils.gdrive_utils.count import GoogleDriveCount
-from ..helper.task_utils.rclone_utils.transfer import RcloneTransferHelper
-from ..helper.task_utils.status_utils.gdrive_status import GoogleDriveStatus
-from ..helper.task_utils.status_utils.rclone_status import RcloneStatus
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import (
+from tghbot.helper.task_utils.gdrive_utils.clone import GoogleDriveClone
+from tghbot.helper.task_utils.gdrive_utils.count import GoogleDriveCount
+from tghbot.helper.task_utils.rclone_utils.transfer import RcloneTransferHelper
+from tghbot.helper.task_utils.status_utils.gdrive_status import GoogleDriveStatus
+from tghbot.helper.task_utils.status_utils.rclone_status import RcloneStatus
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     auto_delete_message,
     delete_links,
     send_message,
