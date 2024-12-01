@@ -22,23 +22,21 @@ from re import (
 )
 from time import time
 
-from bot import (
-    LOGGER,
-    DOWNLOAD_DIR,
-    subprocess_lock
+from tghbot import (
+LOGGER,
+DOWNLOAD_DIR,
+subprocess_lock
 )
-from .bot_utils import (
-    cmd_exec,
-    sync_to_async
+from tghbot.helper.ext_utils.bot_utils import (
+cmd_exec,
+sync_to_async
 )
-from .files_utils import (
-    ARCH_EXT, 
-    get_mime_type
+from tghbot.helper.ext_utils.files_utils import (
+ARCH_EXT,
+get_mime_type
 )
-from .links_utils import is_telegram_link
-from ..telegram_helper.message_utils import get_tg_link_message
-
-
+from tghbot.helper.ext_utils.links_utils import is_telegram_link
+from tghbot.helper.telegram_helper.message_utils import get_tg_link_message
 async def convert_video(listener, video_file, ext, retry=False):
     base_name = ospath.splitext(video_file)[0]
     output = f"{base_name}.{ext}"
