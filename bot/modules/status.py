@@ -22,7 +22,7 @@ from nekozee.handlers import (
     CallbackQueryHandler
 )
 
-from bot import (
+from tghbot import (
     BASE,
     LOGGER,
     bot,
@@ -33,12 +33,12 @@ from bot import (
     task_dict,
     task_dict_lock
 )
-from ..helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     cmd_exec,
     new_task,
     sync_to_async
 )
-from ..helper.ext_utils.status_utils import (
+from tgbot.helper.ext_utils.status_utils import (
     MirrorStatus,
     get_progress_bar_string,
     get_readable_file_size,
@@ -46,9 +46,9 @@ from ..helper.ext_utils.status_utils import (
     get_specific_tasks,
     speed_string_to_bytes,
 )
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import (
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     is_admin,
     request_limiter,
     send_message,
@@ -57,8 +57,8 @@ from ..helper.telegram_helper.message_utils import (
     send_status_message,
     update_status_message,
 )
-from ..helper.telegram_helper.button_build import ButtonMaker
-from ..helper.z_utils import def_media
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.z_utils import def_media
 
 
 @new_task
