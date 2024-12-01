@@ -1,27 +1,27 @@
 from time import time
+from time import time
 from uuid import uuid4
 
-from bot import (
-    bot,
-    bot_name,
-    config_dict,
-    user_data,
+from tghbot import (
+bot,
+bot_name,
+config_dict,
+user_data,
 )
-from .bot_utils import new_task
-from .db_handler import database
-from .status_utils import get_readable_time
-from .shortener import short_url
-from ..telegram_helper.bot_commands import BotCommands
-from ..telegram_helper.button_build import ButtonMaker
-from ..telegram_helper.filters import CustomFilters
-from ..telegram_helper.message_utils import (
-    send_message,
-    send_log_message
+from tghbot.helper.ext_utils.bot_utils import new_task
+from tghbot.helper.ext_utils.db_handler import database
+from tghbot.helper.ext_utils.status_utils import get_readable_time
+from tghbot.helper.ext_utils.shortener import short_url
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
+send_message,
+send_log_message
 )
 
 from nekozee.filters import command
 from nekozee.handlers import MessageHandler
-
 
 async def checking_access(user_id, button=None):
     if not config_dict["TOKEN_TIMEOUT"]:
