@@ -8,25 +8,25 @@ from psutil import (
 from time import time
 from asyncio import iscoroutinefunction
 
-from bot import (
-    DOWNLOAD_DIR,
-    task_dict,
-    task_dict_lock,
-    bot_start_time,
-    config_dict,
-    status_dict,
+from tghbot import (
+DOWNLOAD_DIR,
+task_dict,
+task_dict_lock,
+bot_start_time,
+config_dict,
+status_dict,
 )
-from .bot_utils import sync_to_async
-from ..telegram_helper.button_build import ButtonMaker
-from ..telegram_helper.bot_commands import BotCommands
+from tghbot.helper.ext_utils.bot_utils import sync_to_async
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
 
 SIZE_UNITS = [
-    "B",
-    "KB",
-    "MB",
-    "GB",
-    "TB",
-    "PB"
+"B",
+"KB",
+"MB",
+"GB",
+"TB",
+"PB"
 ]
 
 
