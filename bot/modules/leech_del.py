@@ -3,10 +3,10 @@ from asyncio import sleep
 from nekozee.filters import command
 from nekozee.handlers import MessageHandler
 
-from bot import bot
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import (
+from tghbot import bot
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     edit_message,
     send_message
 )
