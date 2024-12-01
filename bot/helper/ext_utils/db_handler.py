@@ -8,7 +8,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from pymongo.server_api import ServerApi
 from pymongo.errors import PyMongoError
 
-from bot import (
+from tghbot import (
     bot_name,
     user_data,
     rss_dict,
