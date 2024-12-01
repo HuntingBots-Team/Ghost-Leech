@@ -6,14 +6,14 @@ from tghbot import (
     config_dict,
     user_data
 )
-from ..helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     new_task,
     update_user_ldata
 )
-from ..helper.ext_utils.db_handler import database
-from ..helper.telegram_helper.bot_commands import BotCommands
-from ..helper.telegram_helper.filters import CustomFilters
-from ..helper.telegram_helper.message_utils import send_message
+from tghbot.helper.ext_utils.db_handler import database
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import send_message
 
 
 @new_task
