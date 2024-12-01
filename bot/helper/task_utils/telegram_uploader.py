@@ -40,29 +40,28 @@ from nekozee.types import (
     InputMediaPhoto
 )
 
-from bot import (
-    IS_PREMIUM_USER,
-    bot,
-    config_dict,
-    user
+from tghbot import (
+IS_PREMIUM_USER,
+bot,
+config_dict,
+user
 )
-from ..ext_utils.bot_utils import sync_to_async
-from ..ext_utils.files_utils import (
-    clean_unwanted,
-    get_base_name,
-    is_archive
+from tghbot.helper.ext_utils.bot_utils import sync_to_async
+from tghbot.helper.ext_utils.files_utils import (
+clean_unwanted,
+get_base_name,
+is_archive
 )
-from ..ext_utils.media_utils import (
-    get_media_info,
-    get_document_type,
-    get_video_thumbnail,
-    get_audio_thumbnail,
-    get_multiple_frames_thumbnail
+from tghbot.helper.ext_utils.media_utils import (
+get_media_info,
+get_document_type,
+get_video_thumbnail,
+get_audio_thumbnail,
+get_multiple_frames_thumbnail
 )
-from ..telegram_helper.message_utils import delete_message
+from tghbot.helper.telegram_helper.message_utils import delete_message
 
 LOGGER = getLogger(__name__)
-
 
 class TelegramUploader:
     def __init__(self, listener, path):
