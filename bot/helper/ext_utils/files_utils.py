@@ -24,18 +24,17 @@ from shutil import (
 from subprocess import run as srun
 from sys import exit
 
-from bot import (
-    aria2,
-    LOGGER,
-    DOWNLOAD_DIR,
-    qbittorrent_client
+from tghbot import (
+aria2,
+LOGGER,
+DOWNLOAD_DIR,
+qbittorrent_client
 )
-from .bot_utils import (
-    sync_to_async,
-    cmd_exec
+from tghbot.helper.ext_utils.bot_utils import (
+sync_to_async,
+cmd_exec
 )
-from .exceptions import NotSupportedExtractionArchive
-
+from tghbot.helper.ext_utils.exceptions import NotSupportedExtractionArchive
 ARCH_EXT = [
     ".tar.bz2",
     ".tar.gz",
