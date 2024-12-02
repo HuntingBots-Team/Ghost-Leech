@@ -5,26 +5,26 @@ from aiofiles.os import (
 )
 from asyncio import sleep
 
-from bot import (
-    LOGGER,
-    config_dict,
-    non_queued_dl,
-    qbittorrent_client,
-    queue_dict_lock,
-    task_dict,
-    task_dict_lock,
+from tghbot import (
+LOGGER,
+config_dict,
+non_queued_dl,
+qbittorrent_client,
+queue_dict_lock,
+task_dict,
+task_dict_lock,
 )
-from ...ext_utils.bot_utils import (
-    bt_selection_buttons,
-    sync_to_async
+from tghbot.helper.ext_utils.bot_utils import (
+bt_selection_buttons,
+sync_to_async
 )
-from ...ext_utils.task_manager import check_running_tasks
-from ...listeners.qbit_listener import on_download_start
-from ...task_utils.status_utils.qbit_status import QbittorrentStatus
-from ...telegram_helper.message_utils import (
-    delete_message,
-    send_message,
-    send_status_message,
+from tghbot.helper.ext_utils.task_manager import check_running_tasks
+from tghbot.helper.listeners.qbit_listener import on_download_start
+from tghbot.helper.task_utils.status_utils.qbit_status import QbittorrentStatus
+from tghbot.helper.telegram_helper.message_utils import (
+delete_message,
+send_message,
+send_status_message,
 )
 
 
