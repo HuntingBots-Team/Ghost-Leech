@@ -3,26 +3,26 @@ from aiofiles.os import remove
 from json import loads
 from secrets import token_urlsafe
 
-from bot import (
-    LOGGER,
-    task_dict,
-    task_dict_lock
+from tghbot import (
+LOGGER,
+task_dict,
+task_dict_lock
 )
-from ...ext_utils.bot_utils import cmd_exec
-from ...ext_utils.status_utils import get_readable_file_size
-from ...ext_utils.task_manager import (
-    check_running_tasks,
-    limit_checker,
-    stop_duplicate_check
+from tghbot.helper.ext_utils.bot_utils import cmd_exec
+from tghbot.helper.ext_utils.status_utils import get_readable_file_size
+from tghbot.helper.ext_utils.task_manager import (
+check_running_tasks,
+limit_checker,
+stop_duplicate_check
 )
-from ...task_utils.rclone_utils.transfer import RcloneTransferHelper
-from ...task_utils.status_utils.queue_status import QueueStatus
-from ...task_utils.status_utils.rclone_status import RcloneStatus
-from ...telegram_helper.message_utils import (
-    auto_delete_message,
-    delete_links,
-    send_message,
-    send_status_message
+from tghbot.helper.task_utils.rclone_utils.transfer import RcloneTransferHelper
+from tghbot.helper.task_utils.status_utils.queue_status import QueueStatus
+from tghbot.helper.task_utils.status_utils.rclone_status import RcloneStatus
+from tghbot.helper.telegram_helper.message_utils import (
+auto_delete_message,
+delete_links,
+send_message,
+send_status_message
 )
 
 
