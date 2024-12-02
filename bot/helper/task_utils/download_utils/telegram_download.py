@@ -5,25 +5,24 @@ from asyncio import (
 from time import time
 from nekozee.errors import FloodWait
 
-from bot import (
-    LOGGER,
-    bot,
-    config_dict,
-    task_dict,
-    task_dict_lock,
-    user
+from tghbot import (
+LOGGER,
+bot,
+config_dict,
+task_dict,
+task_dict_lock,
+user
 )
-from ...ext_utils.task_manager import (
-    check_running_tasks,
-    stop_duplicate_check
+from tghbot.helper.ext_utils.task_manager import (
+check_running_tasks,
+stop_duplicate_check
 )
-from ...task_utils.status_utils.queue_status import QueueStatus
-from ...task_utils.status_utils.telegram_status import TelegramStatus
-from ...telegram_helper.message_utils import (
-    send_message,
-    send_status_message
+from tghbot.helper.task_utils.status_utils.queue_status import QueueStatus
+from tghbot.helper.task_utils.status_utils.telegram_status import TelegramStatus
+from tghbot.helper.telegram_helper.message_utils import (
+send_message,
+send_status_message
 )
-
 global_lock = Lock()
 GLOBAL_GID = set()
 
