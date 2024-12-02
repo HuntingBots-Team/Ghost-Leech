@@ -6,29 +6,28 @@ from os import (
 from re import search as re_search
 from secrets import token_urlsafe
 
-from bot import (
-    task_dict_lock,
-    task_dict
+from tghbot import (
+task_dict_lock,
+task_dict
 )
-from ...ext_utils.bot_utils import (
-    sync_to_async,
-    async_to_sync
+from tghbot.helper.ext_utils.bot_utils import (
+sync_to_async,
+async_to_sync
 )
-from ...ext_utils.status_utils import get_readable_file_size
+from tghbot.helper.ext_utils.status_utils import get_readable_file_size
 from yt_dlp import (
-    DownloadError,
-    YoutubeDL
+DownloadError,
+YoutubeDL
 )
-from ...ext_utils.task_manager import (
-    check_running_tasks,
-    limit_checker,
-    list_checker,
-    stop_duplicate_check
+from tghbot.helper.ext_utils.task_manager import (
+check_running_tasks,
+limit_checker,
+list_checker,
+stop_duplicate_check
 )
-from ...task_utils.status_utils.queue_status import QueueStatus
-from ...telegram_helper.message_utils import send_status_message
-from ..status_utils.yt_dlp_download_status import YtDlpDownloadStatus
-
+from tghbot.helper.task_utils.status_utils.queue_status import QueueStatus
+from tghbot.helper.telegram_helper.message_utils import send_status_message
+from tghbot.helper.task_utils.status_utils.yt_dlp_download_status import YtDlpDownloadStatus
 LOGGER = getLogger(__name__)
 
 
