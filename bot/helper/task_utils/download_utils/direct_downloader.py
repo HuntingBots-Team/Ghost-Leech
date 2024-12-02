@@ -1,28 +1,28 @@
 from asyncio import sleep
 from secrets import token_urlsafe
 
-from bot import (
-    LOGGER,
-    aria2_options,
-    aria2c_global,
-    task_dict,
-    task_dict_lock
+from tghbot import (
+LOGGER,
+aria2_options,
+aria2c_global,
+task_dict,
+task_dict_lock
 )
-from ...ext_utils.bot_utils import sync_to_async
-from ...ext_utils.status_utils import get_readable_file_size
-from ...ext_utils.task_manager import (
-    check_running_tasks,
-    limit_checker,
-    stop_duplicate_check
+from tghbot.helper.ext_utils.bot_utils import sync_to_async
+from tghbot.helper.ext_utils.status_utils import get_readable_file_size
+from tghbot.helper.ext_utils.task_manager import (
+check_running_tasks,
+limit_checker,
+stop_duplicate_check
 )
-from ...listeners.direct_listener import DirectListener
-from ...task_utils.status_utils.direct_status import DirectStatus
-from ...task_utils.status_utils.queue_status import QueueStatus
-from ...telegram_helper.message_utils import (
-    auto_delete_message,
-    delete_links,
-    send_message,
-    send_status_message
+from tghbot.helper.listeners.direct_listener import DirectListener
+from tghbot.helper.task_utils.status_utils.direct_status import DirectStatus
+from tghbot.helper.task_utils.status_utils.queue_status import QueueStatus
+from tghbot.helper.telegram_helper.message_utils import (
+auto_delete_message,
+delete_links,
+send_message,
+send_status_message
 )
 
 
