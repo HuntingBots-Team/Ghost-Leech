@@ -3,24 +3,24 @@ from aiofiles.os import (
     path as aiopath
 )
 
-from bot import (
-    aria2,
-    task_dict_lock,
-    task_dict,
-    LOGGER,
-    config_dict,
-    aria2_options,
-    aria2c_global,
+from tghbot import (
+aria2,
+task_dict_lock,
+task_dict,
+LOGGER,
+config_dict,
+aria2_options,
+aria2c_global,
 )
-from ...ext_utils.bot_utils import (
-    bt_selection_buttons,
-    sync_to_async
+from tghbot.helper.ext_utils.bot_utils import (
+bt_selection_buttons,
+sync_to_async
 )
-from ...ext_utils.task_manager import check_running_tasks
-from ...task_utils.status_utils.aria2_status import Aria2Status
-from ...telegram_helper.message_utils import (
-    send_status_message,
-    send_message
+from tghbot.helper.ext_utils.task_manager import check_running_tasks
+from tghbot.helper.task_utils.status_utils.aria2_status import Aria2Status
+from tghbot.helper.telegram_helper.message_utils import (
+send_status_message,
+send_message
 )
 
 
