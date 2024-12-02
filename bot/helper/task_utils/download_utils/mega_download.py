@@ -3,35 +3,35 @@ from aiofiles.os import makedirs
 
 from mega import MegaApi
 
-from bot import (
-    LOGGER,
-    config_dict,
-    task_dict,
-    task_dict_lock,
-    non_queued_dl,
-    queue_dict_lock
+from tghbot import (
+LOGGER,
+config_dict,
+task_dict,
+task_dict_lock,
+non_queued_dl,
+queue_dict_lock
 )
-from ...ext_utils.links_utils import get_mega_link_type
-from ...ext_utils.bot_utils import sync_to_async
+from tghbot.helper.ext_utils.links_utils import get_mega_link_type
+from tghbot.helper.ext_utils.bot_utils import sync_to_async
 
-from ...ext_utils.task_manager import (
-    check_running_tasks,
-    limit_checker,
-    stop_duplicate_check
+from tghbot.helper.ext_utils.task_manager import (
+check_running_tasks,
+limit_checker,
+stop_duplicate_check
 )
-from ...task_utils.status_utils.mega_download_status import MegaDownloadStatus
-from ...task_utils.status_utils.queue_status import QueueStatus
-from ...telegram_helper.message_utils import (
-    auto_delete_message,
-    delete_links,
-    send_message,
-    send_status_message
+from tghbot.helper.task_utils.status_utils.mega_download_status import MegaDownloadStatus
+from tghbot.helper.task_utils.status_utils.queue_status import QueueStatus
+from tghbot.helper.telegram_helper.message_utils import (
+auto_delete_message,
+delete_links,
+send_message,
+send_status_message
 )
-from ...listeners.mega_listener import (
-    MegaAppListener,
-    AsyncExecutor,
-    mega_login,
-    mega_logout,
+from tghbot.helper.listeners.mega_listener import (
+MegaAppListener,
+AsyncExecutor,
+mega_login,
+mega_logout,
 )
 
 
