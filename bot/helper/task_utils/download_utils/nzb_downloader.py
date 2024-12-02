@@ -6,27 +6,27 @@ from asyncio import (
     gather,
     sleep
 )
-from sabnzbdapi.exception import (
+from plugins.sabnzbdapi.exception import (
     LoginFailed,
     NotLoggedIn
 )
 
-from bot import (
-    LOGGER,
-    config_dict,
-    sabnzbd_client,
-    task_dict,
-    task_dict_lock
+from tghbot import (
+LOGGER,
+config_dict,
+sabnzbd_client,
+task_dict,
+task_dict_lock
 )
-from ...ext_utils.bot_utils import bt_selection_buttons
-from ...ext_utils.task_manager import check_running_tasks
-from ...listeners.nzb_listener import on_download_start
-from ...ext_utils.db_handler import database
-from ...task_utils.status_utils.nzb_status import SabnzbdStatus
-from ...telegram_helper.message_utils import (
-    delete_message,
-    send_message,
-    send_status_message
+from tghbot.helper.ext_utils.bot_utils import bt_selection_buttons
+from tghbot.helper.ext_utils.task_manager import check_running_tasks
+from tghbot.helper.listeners.nzb_listener import on_download_start
+from tghbot.helper.ext_utils.db_handler import database
+from tghbot.helper.task_utils.status_utils.nzb_status import SabnzbdStatus
+from tghbot.helper.telegram_helper.message_utils import (
+delete_message,
+send_message,
+send_status_message
 )
 
 
