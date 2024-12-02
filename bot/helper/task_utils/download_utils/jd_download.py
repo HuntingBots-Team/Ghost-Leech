@@ -15,34 +15,35 @@ from aiofiles.os import (
     remove
 )
 from aiofiles import open as aiopen
+from aiofiles import open as aiopen
 from base64 import b64encode
 from secrets import token_urlsafe
-from myjd.exception import MYJDException
+from plugins.myjd.exception import MYJDException
 
-from bot import (
-    LOGGER,
-    jd_downloads,
-    jd_lock,
-    task_dict,
-    task_dict_lock,
+from tghbot import (
+LOGGER,
+jd_downloads,
+jd_lock,
+task_dict,
+task_dict_lock,
 )
-from ...ext_utils.bot_utils import new_task
-from ...ext_utils.jdownloader_booter import jdownloader
-from ...ext_utils.task_manager import (
-    check_running_tasks,
-    limit_checker,
-    stop_duplicate_check,
+from tghbot.helper.ext_utils.bot_utils import new_task
+from tghbot.helper.ext_utils.jdownloader_booter import jdownloader
+from tghbot.helper.ext_utils.task_manager import (
+check_running_tasks,
+limit_checker,
+stop_duplicate_check,
 )
-from ...listeners.jdownloader_listener import on_download_start
-from ...task_utils.status_utils.jdownloader_status import JDownloaderStatus
-from ...task_utils.status_utils.queue_status import QueueStatus
-from ...telegram_helper.button_build import ButtonMaker
-from ...telegram_helper.message_utils import (
-    auto_delete_message,
-    delete_message,
-    edit_message,
-    send_message,
-    send_status_message,
+from tghbot.helper.listeners.jdownloader_listener import on_download_start
+from tghbot.helper.task_utils.status_utils.jdownloader_status import JDownloaderStatus
+from tghbot.helper.task_utils.status_utils.queue_status import QueueStatus
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.message_utils import (
+auto_delete_message,
+delete_message,
+edit_message,
+send_message,
+send_status_message,
 )
 
 
