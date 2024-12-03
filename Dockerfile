@@ -1,6 +1,5 @@
 # Step 1: Use a base image with Python
-FROM python:3.10.0:latest
-
+FROM ppython:3.9-slim
 # Step 2: Set the working directory in the container
 WORKDIR /usr/src/app
 
