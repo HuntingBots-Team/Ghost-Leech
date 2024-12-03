@@ -24,9 +24,9 @@ from sys import exit
 
 getLogger("pymongo").setLevel(ERROR)
 
-if path.exists("Zee_Logs.txt"):
+if path.exists("TGH_Logs.txt"):
     with open(
-        "Zee_Logs.txt",
+        "TGH_Logs.txt",
         "r+"
     ) as f:
         f.truncate(0)
@@ -37,7 +37,7 @@ if path.exists("rlog.txt"):
 basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     handlers=[
-        FileHandler("Zee_Logs.txt"),
+        FileHandler("TGH_Logs.txt"),
         StreamHandler()
     ],
     level=INFO,
@@ -122,8 +122,8 @@ if UPSTREAM_REPO is not None:
     update = urun(
         [
             f"git init -q \
-                     && git config --global user.email support@z-mirror.com \
-                     && git config --global user.name zee \
+                     && git config --global user.email huntingbots.tg@gmail.com \
+                     && git config --global user.name TGH \
                      && git add . \
                      && git commit -sm update -q \
                      && git remote add origin {UPSTREAM_REPO} \
@@ -135,7 +135,7 @@ if UPSTREAM_REPO is not None:
 
     if update.returncode == 0:
         log_info("Successfully updated...")
-        log_info("Thanks For Using @Z_Mirror")
+        log_info("Thanks For Using @TGHThingLeech_bot")
     else:
         log_error("Error while getting latest updates.")
         log_error("Check if entered UPSTREAM_REPO is valid or not!")
