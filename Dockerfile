@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 80
 
 # Run the application
-CMD ["python", "updater.py"]
+CMD ["python", "update.py"]
