@@ -1,11 +1,11 @@
-from bot import (
+from tghbot import (
     LOGGER,
     jd_lock,
     jd_downloads
 )
-from ...ext_utils.bot_utils import async_to_sync
-from ...ext_utils.jdownloader_booter import jdownloader
-from ...ext_utils.status_utils import (
+from tghbot.helper.ext_utils.bot_utils import async_to_sync
+from tghbot.helper.ext_utils.jdownloader_booter import jdownloader
+from tghbot.helper.ext_utils.status_utils import (
     MirrorStatus,
     get_readable_file_size,
     get_readable_time,
