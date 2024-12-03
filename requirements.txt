@@ -1,4 +1,4 @@
-nekozee
+nekozee==1.0.0
 aiofiles
 aioshutil
 anytree
