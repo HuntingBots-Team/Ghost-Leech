@@ -18,14 +18,14 @@ from qbittorrentapi import (
     Client as QbClient
 )
 from time import sleep
-from sabnzbdapi import SabnzbdClient
+from plugins.sabnzbdapi import SabnzbdClient
 from asyncio import (
     get_running_loop,
     new_event_loop,
     set_event_loop
 )
 
-from web.nodes import make_tree
+from plugins.web.nodes import make_tree
 
 app = Flask(__name__)
 
