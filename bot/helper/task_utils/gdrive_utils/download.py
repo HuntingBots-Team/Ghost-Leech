@@ -11,9 +11,9 @@ from tenacity import (
     RetryError,
 )
 
-from ...ext_utils.bot_utils import async_to_sync
-from ...ext_utils.bot_utils import SetInterval
-from ...task_utils.gdrive_utils.helper import GoogleDriveHelper
+from tghbot.helper.ext_utils.bot_utils import async_to_sync
+from tghbot.helper.ext_utils.bot_utils import SetInterval
+from tghbot.helper.task_utils.gdrive_utils.helper import GoogleDriveHelper
 
 LOGGER = getLogger(__name__)
 
