@@ -102,14 +102,14 @@ UPSTREAM_REPO = environ.get(
     ""
 )
 if len(UPSTREAM_REPO) == 0:
-    UPSTREAM_REPO = "https://github.com/Dawn-India/Z-Mirror"
+    UPSTREAM_REPO = "https://HuntingBots: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@github.com/HuntingBots/Kazuha"
 
 UPSTREAM_BRANCH = environ.get(
     "UPSTREAM_BRANCH",
     ""
 )
 if len(UPSTREAM_BRANCH) == 0:
-    UPSTREAM_BRANCH = "main"
+    UPSTREAM_BRANCH = "HuntingBots"
 
 if UPSTREAM_REPO is not None:
     if path.exists(".git"):
