@@ -1,8 +1,8 @@
 from time import time
 
-from bot import aria2, LOGGER
-from ...ext_utils.bot_utils import sync_to_async
-from ...ext_utils.status_utils import (
+from tghbot import aria2, LOGGER
+from tghbot.helper.ext_utils.bot_utils import sync_to_async
+from tghbot.helper.ext_utils.status_utils import (
     MirrorStatus,
     get_readable_time
 )
