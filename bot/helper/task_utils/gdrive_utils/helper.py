@@ -24,8 +24,8 @@ from urllib.parse import (
     urlparse
 )
 
-from bot import config_dict
-from ...ext_utils.links_utils import is_gdrive_id
+from tghbot import config_dict
+from tghbot.helper.ext_utils.links_utils import is_gdrive_id
 
 LOGGER = getLogger(__name__)
 getLogger("googleapiclient.discovery").setLevel(ERROR)
