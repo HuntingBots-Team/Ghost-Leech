@@ -9,7 +9,7 @@ from urllib3.exceptions import InsecureRequestWarning
 from functools import wraps
 
 from plugins.sabnzbdapi.job_functions import JobFunctions
-from .exception import APIConnectionError
+from plugins.sabnzbdapi.exception import APIConnectionError
 
 
 class SabnzbdSession(AsyncClient):
