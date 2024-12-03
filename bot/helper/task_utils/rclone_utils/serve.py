@@ -3,7 +3,7 @@ from aiofiles.os import path as aiopath
 from asyncio import create_subprocess_exec
 from configparser import ConfigParser
 
-from bot import config_dict
+from tghbot import config_dict
 
 RcloneServe = []
 
