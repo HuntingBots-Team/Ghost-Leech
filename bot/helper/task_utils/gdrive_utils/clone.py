@@ -10,8 +10,8 @@ from tenacity import (
 )
 from time import time
 
-from ...ext_utils.bot_utils import async_to_sync
-from ...task_utils.gdrive_utils.helper import GoogleDriveHelper
+from tghbot.helper.ext_utils.bot_utils import async_to_sync
+from tghbot.helper.task_utils.gdrive_utils.helper import GoogleDriveHelper
 
 LOGGER = getLogger(__name__)
 
