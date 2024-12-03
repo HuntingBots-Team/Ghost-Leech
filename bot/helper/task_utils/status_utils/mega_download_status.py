@@ -1,6 +1,6 @@
 from mega import MegaApi
 
-from ...ext_utils.status_utils import (
+from tghbot.helper.ext_utils.status_utils import (
     MirrorStatus,
     get_readable_file_size,
     get_readable_time
