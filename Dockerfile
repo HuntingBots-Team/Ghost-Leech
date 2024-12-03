@@ -13,5 +13,5 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 # Expose the port the app runs on
 EXPOSE 80
 
-# Run the bot using python
-CMD ["python3", "update.py"] && CMD ["python3", "-m", "tghbot"]
+#RUN chmod +x extract
+CMD ["bash","start.sh"]
