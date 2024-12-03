@@ -1,14 +1,14 @@
 from logging import getLogger
 
-from bot import (
+from tghbot import (
     config_dict,
     drives_names,
     drives_ids,
     index_urls,
     user_data
 )
-from ...ext_utils.status_utils import get_readable_file_size
-from ...task_utils.gdrive_utils.helper import GoogleDriveHelper
+from tghbot.helper.ext_utils.status_utils import get_readable_file_size
+from tghbot.helper.task_utils.gdrive_utils.helper import GoogleDriveHelper
 
 LOGGER = getLogger(__name__)
 
