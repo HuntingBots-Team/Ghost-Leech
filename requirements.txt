@@ -17,7 +17,7 @@ gunicorn
 httpx
 lxml
 motor
-nekozee-24.3.1
+nekozee
 natsort
 pillow
 psutil
