@@ -1,13 +1,13 @@
 from asyncio import sleep, gather
 
-from bot import (
+from tghbot import (
     LOGGER,
     qbittorrent_client,
     qb_torrents,
     qb_listener_lock
 )
-from ...ext_utils.bot_utils import sync_to_async
-from ...ext_utils.status_utils import (
+from tghbot.helper.ext_utils.bot_utils import sync_to_async
+from tghbot.helper.ext_utils.status_utils import (
     MirrorStatus,
     get_readable_file_size,
     get_readable_time,
