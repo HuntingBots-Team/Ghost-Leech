@@ -1,15 +1,15 @@
-from bot import (
+from tghbot import (
     LOGGER,
     subprocess_lock
 )
-from ...ext_utils.status_utils import (
+from tghbot.helper.ext_utils.status_utils import (
     get_readable_file_size,
     get_readable_time,
     MirrorStatus
 )
 from subprocess import run as frun
 from time import time
-from ...ext_utils.files_utils import get_path_size
+from tghbot.helper.ext_utils.files_utils import get_path_size
 
 
 class SplitStatus:
