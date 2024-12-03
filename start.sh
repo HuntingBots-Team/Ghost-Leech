@@ -1,1 +1,1 @@
-python3 update.py && python3 -m tghbot
+python3 bot.py && python3 -m tghbot
