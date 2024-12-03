@@ -1,6 +1,6 @@
 services:
   app:
-    container_name:tghbot 
+    container_name: ghostx
     build:
       context: .
       dockerfile: Dockerfile
