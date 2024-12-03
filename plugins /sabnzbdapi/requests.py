@@ -8,7 +8,7 @@ from urllib3 import disable_warnings
 from urllib3.exceptions import InsecureRequestWarning
 from functools import wraps
 
-from .job_functions import JobFunctions
+from plugins.sabnzbdapi.job_functions import JobFunctions
 from .exception import APIConnectionError
 
 
