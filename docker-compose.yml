@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: python3 start.sh
+    command: bash start.sh
     restart: on-failure
     ports:
       - "80:80"
