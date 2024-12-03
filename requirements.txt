@@ -18,6 +18,7 @@ httpx
 lxml
 motor
 natsort
+nekozee
 pillow
 psutil
 pymongo
