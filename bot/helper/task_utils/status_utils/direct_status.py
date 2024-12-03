@@ -1,5 +1,5 @@
-from bot import aria2
-from ...ext_utils.status_utils import (
+from tghbot import aria2
+from tghbot.helper.ext_utils.status_utils import (
     MirrorStatus,
     get_readable_file_size,
     get_readable_time,
