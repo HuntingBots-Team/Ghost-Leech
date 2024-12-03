@@ -17,7 +17,6 @@ gunicorn
 httpx
 lxml
 motor
-nekozee
 natsort
 pillow
 psutil
