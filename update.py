@@ -102,7 +102,7 @@ UPSTREAM_REPO = environ.get(
     ""
 )
 if len(UPSTREAM_REPO) == 0:
-    UPSTREAM_REPO = "https://HuntingBots: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@github.com/HuntingBots/Kazuha"
+    UPSTREAM_REPO = "https://HuntingBots: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@github.com/HuntingBots/Kazuha"
 
 UPSTREAM_BRANCH = environ.get(
     "UPSTREAM_BRANCH",
