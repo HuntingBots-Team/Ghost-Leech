@@ -1,5 +1,5 @@
-from bot import LOGGER
-from ...ext_utils.status_utils import (
+from tghbot import LOGGER
+from tghbot.helper.ext_utils.status_utils import (
     get_readable_file_size,
     MirrorStatus
 )
