@@ -1,19 +1,17 @@
-# Step 1: Use a base image with Python
-FROM ppython:3.9-slim
-# Step 2: Set the working directory in the container
+# Use an official Python runtime as a parent image
+FROM python:3.9-slim
+
+# Set the working directory in the container
 WORKDIR /usr/src/app
 
-# Step 3: Copy the requirements file into the container
-COPY requirements.txt ./
-
-# Step 4: Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Step 5: Copy the current directory contents into the container at /usr/src/app
+# Copy the current directory contents into the container at /usr/src/app
 COPY . .
 
-# Step 6: Make the start script executable
-RUN chmod +x start.sh
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Step 7: Specify the command to run on container start
-CMD ["bash", "start.sh"]
+# Expose the port the app runs on
+EXPOSE 80
+
+# Run the application
+CMD ["python", "updater.py"]
