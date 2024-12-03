@@ -14,13 +14,13 @@ from tenacity import (
     RetryError,
 )
 
-from bot import config_dict
-from ...ext_utils.bot_utils import (
+from tghbot import config_dict
+from tghbot.helper.ext_utils.bot_utils import (
     async_to_sync,
     SetInterval
 )
-from ...ext_utils.files_utils import get_mime_type
-from ...task_utils.gdrive_utils.helper import GoogleDriveHelper
+from tghbot.helper.ext_utils.files_utils import get_mime_type
+from tghbot.helper.task_utils.gdrive_utils.helper import GoogleDriveHelper
 
 LOGGER = getLogger(__name__)
 
