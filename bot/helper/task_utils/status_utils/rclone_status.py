@@ -1,4 +1,4 @@
-from ...ext_utils.status_utils import MirrorStatus
+from tghbot.helper.ext_utils.status_utils import MirrorStatus
 from subprocess import run as rrun
 
 
