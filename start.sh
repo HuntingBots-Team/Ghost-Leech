@@ -1,1 +1,2 @@
-python3 update.py && python3 -m tghbot
+chmod +x extract
+python3 -m tghbot
