@@ -1,2 +1,1 @@
-chmod +x extract
-python3 -m tobrot
+python3 update.py && python3 -m tghbot
