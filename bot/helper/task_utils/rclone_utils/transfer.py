@@ -15,12 +15,12 @@ from logging import getLogger
 from random import randrange
 from re import findall as re_findall
 
-from bot import config_dict
-from ...ext_utils.bot_utils import (
+from tghbot import config_dict
+from tghbot.helper.ext_utils.bot_utils import (
     cmd_exec,
     sync_to_async
 )
-from ...ext_utils.files_utils import (
+from tghbot.helper.ext_utils.files_utils import (
     get_mime_type,
     count_files_and_folders,
     clean_unwanted,
