@@ -1,4 +1,4 @@
-from .exception import (
+from plugins.exception import (
     MYJDException,
     MYJDConnectionException,
     MYJDDeviceNotFoundException,
