@@ -16,27 +16,27 @@ from nekozee.filters import (
 from nekozee.handlers import CallbackQueryHandler
 from time import time
 
-from bot import (
-    LOGGER,
-    config_dict
+from tghbot import (
+LOGGER,
+config_dict
 )
-from ...ext_utils.bot_utils import (
-    cmd_exec,
-    loop_thread,
-    new_task,
-    update_user_ldata,
+from tghbot.helper.ext_utils.bot_utils import (
+cmd_exec,
+loop_thread,
+new_task,
+update_user_ldata,
 )
-from ...ext_utils.db_handler import database
-from ...ext_utils.status_utils import (
-    get_readable_file_size,
-    get_readable_time
+from tghbot.helper.ext_utils.db_handler import database
+from tghbot.helper.ext_utils.status_utils import (
+get_readable_file_size,
+get_readable_time
 )
-from ...telegram_helper.button_build import ButtonMaker
-from ...telegram_helper.message_utils import (
-    send_message,
-    edit_message,
-    delete_message,
-    auto_delete_message,
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.message_utils import (
+send_message,
+edit_message,
+delete_message,
+auto_delete_message,
 )
 
 LIST_LIMIT = 6
