@@ -20,8 +20,8 @@ send_message,
 send_log_message
 )
 
-from nekozee.filters import command
-from nekozee.handlers import MessageHandler
+from pyrogram.filters import command
+from pyrogram.handlers import MessageHandler
 
 async def checking_access(user_id, button=None):
     if not config_dict["TOKEN_TIMEOUT"]:
