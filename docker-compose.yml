@@ -1,13 +1,14 @@
+version: '3.8'
+
 services:
-  app:
-    container_name: tghbot
-    build:
-      context: .
-      dockerfile: Dockerfile
-    command: bash start.sh
-    restart: on-failure
+  ghost_leech_app:
+    build: .
+    container_name: ghost_leech_container
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - DATABASE_URL=${DATABASE_URL}
+    volumes:
+      - .:/usr/src/app
     ports:
       - "80:80"
-      - "8060:8060"
-      - "4000:4000"
-      - "4090:4090"
+    command: ["python", "./update.py"]
