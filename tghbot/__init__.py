@@ -54,10 +54,9 @@ setdefaulttimeout(600)
 getLogger("qbittorrentapi").setLevel(INFO)
 getLogger("requests").setLevel(INFO)
 getLogger("urllib3").setLevel(INFO)
-getLogger("apscheduler").setLevel(ERROR)
+getLogger("pyrogram").setLevel(ERROR)
 getLogger("httpx").setLevel(ERROR)
 getLogger("pymongo").setLevel(ERROR)
-getLogger("nekozee").setLevel(ERROR)
 
 bot_start_time = time()
 
