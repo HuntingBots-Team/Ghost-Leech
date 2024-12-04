@@ -24,7 +24,7 @@ from logging import (
     StreamHandler,
     warning as log_warning,
 )
-from nekozee import Client as TgClient
+from pyrogram import Client as TgClient
 from os import (
     environ,
     path as ospath,
