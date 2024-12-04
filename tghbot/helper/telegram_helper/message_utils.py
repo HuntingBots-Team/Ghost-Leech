@@ -7,16 +7,16 @@ from datetime import (
     timezone,
 )
 
-from nekozee.errors import (
+from pyrogram.errors import (
     FloodWait,
     PeerIdInvalid,
     RPCError,
     UserNotParticipant,
 )
-from nekozee.types import ChatPermissions
-from nekozee.enums import ChatAction
+from pyrogram.types import ChatPermissions
+from pyrogram.enums import ChatAction
 
-from bot import (
+from tghbot import (
     LOGGER,
     bot,
     bot_loop,
@@ -28,10 +28,10 @@ from bot import (
     task_dict_lock,
     user,
 )
-from ..ext_utils.bot_utils import SetInterval
-from ..ext_utils.exceptions import TgLinkException
-from ..ext_utils.status_utils import get_readable_message
-from ..telegram_helper.button_build import ButtonMaker
+from tghbot.helper.ext_utils.bot_utils import SetInterval
+from tghbot.helper.ext_utils.exceptions import TgLinkException
+from tghbot.helper.ext_utils.status_utils import get_readable_message
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
 
 
 async def send_message(message, text, buttons=None, block=True):
