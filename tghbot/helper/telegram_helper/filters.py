@@ -1,6 +1,6 @@
-from nekozee.filters import create
+from pyrogram.filters import create
 
-from bot import (
+from tghbot import (
     config_dict,
     user_data
 )
