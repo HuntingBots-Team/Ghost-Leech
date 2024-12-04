@@ -4,23 +4,17 @@ FROM python:3.9-slim
 # Set the working directory in the container
 WORKDIR /usr/src/app
 
-# Install git and other system dependencies
-RUN apt-get update && apt-get install -y git build-essential libssl-dev && rm -rf /var/lib/apt/lists/*
-
-# Copy the requirements file into the container
-COPY requirements.txt ./
-
-# Install Python dependencies
-RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt && pip install TgCrypto
-
-# Copy the rest of the application code into the container
+# Copy the current directory contents into the container at /usr/src/app
 COPY . .
 
-# Make the start.sh script executable
-RUN chmod +x start.sh
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose the port the app runs on
+# Make port 80 available to the world outside this container
 EXPOSE 80
 
-# Define the command to run the application
-CMD ["bash", "start.sh"]
+# Define environment variable
+ENV NAME World
+
+# Run update.py when the container launches
+CMD ["python", "./update.py"]
