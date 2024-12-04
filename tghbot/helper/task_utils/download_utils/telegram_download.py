@@ -3,7 +3,7 @@ from asyncio import (
     sleep
 )
 from time import time
-from nekozee.errors import FloodWait
+from pyrogram.errors import FloodWait
 
 from tghbot import (
 LOGGER,
