@@ -25,7 +25,6 @@ pyrogram
 python-dotenv
 python-magic
 qbittorrent-api
-sabnzbdapi
 requests
 telegraph
 tenacity
