@@ -1,14 +1,11 @@
 version: '3.8'
 
 services:
-  ghost_leech_app:
+  tghbot_app:
     build: .
-    container_name: ghost_leech_container
-    environment:
-      - BOT_TOKEN=${BOT_TOKEN}
-      - DATABASE_URL=${DATABASE_URL}
-    volumes:
-      - .:/usr/src/app
+    container_name: tghbot_container
+    env_file:
+      - config.env
     ports:
       - "80:80"
     command: ["python", "./update.py"]
