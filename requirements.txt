@@ -1,4 +1,3 @@
-nekozee
 aiofiles
 aioshutil
 anytree
@@ -22,6 +21,7 @@ natsort
 pillow
 psutil
 pymongo
+pyrogram
 python-dotenv
 python-magic
 qbittorrent-api
