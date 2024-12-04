@@ -7,14 +7,14 @@ WORKDIR /usr/src/app
 # Copy the current directory contents into the container at /usr/src/app
 COPY . .
 
+# Copy the config.env file into the container
+COPY config.env .
+
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
-
-# Define environment variable
-ENV NAME World
 
 # Run update.py when the container launches
 CMD ["python", "./update.py"]
