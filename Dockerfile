@@ -14,9 +14,9 @@ COPY config.env .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy 'tghbot' and 'plugins' and 'sabnzbdapi' directories
-COPY tghbot /usr/src/app/tghbot
 COPY plugins /usr/src/app/plugins
 COPY sabnzbdapi /usr/src/app/sabnzbdapi
+COPY tghbot /usr/src/app/tghbot
 
 
 # Make port 80 available to the world outside this container
