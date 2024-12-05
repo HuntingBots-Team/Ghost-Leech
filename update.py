@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 from pymongo import MongoClient
 
 # Add directories to system path
-sys.path.append(os.path.join(os.path.dirname(__file__), 'tghbot'))
 sys.path.append(os.path.join(os.path.dirname(__file__), 'plugins'))
 sys.path.append(os.path.join(os.path.dirname(__file__), 'sabnzbdapi'))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'tghbot'))
 
 # Example imports from directories
 # from tghbot import some_module
