@@ -8,8 +8,6 @@ services:
       - config.env
     ports:
       - "80:80"
-    volumes:
-      - ./plugins:/usr/src/app/plugins
-      - ./sabnzbdapi:/usr/src/app/sabnzbdapi
+    volumes: 
       - ./tghbot:/usr/src/app/tghbot
     command: python /usr/src/app/update.py
