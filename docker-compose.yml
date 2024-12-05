@@ -1,13 +1,15 @@
+version: '3.8'
+
 services:
-tghbot_app:
-build: .
-container_name: tghbot_container
-env_file:
-- config.env
-ports:
-- "80:80"
-volumes:
-- ./tghbot:/usr/src/app/tghbot
-- ./plugins:/usr/src/app/plugins
-- ./sabnzbdapi:/usr/src/app/sabnzbdapi
-command: python ./update.py
+  tghbot_app:
+    build: .
+    container_name: tghbot_container
+    env_file:
+      - config.env
+    ports:
+      - "80:80"
+    volumes:
+      - ./tghbot:/usr/src/app/tghbot
+      - ./plugins:/usr/src/app/plugins
+      - ./sabnzbdapi:/usr/src/app/sabnzbdapi
+    command: python ./update.py
