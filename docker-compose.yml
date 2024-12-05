@@ -9,7 +9,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./tghbot:/usr/src/app/tghbot
-      - ./plugins:/usr/src/app/plugins
+            - ./plugins:/usr/src/app/plugins
       - ./sabnzbdapi:/usr/src/app/sabnzbdapi
+      - ./tghbot:/usr/src/app/tghbot
     command: python ./update.py
